@@ -5,38 +5,38 @@ import { Star, Heart, Building2, UtensilsCrossed, Calendar } from "lucide-react"
 
 const pages = [
   {
-    slug: "/best-restaurant-newark-de",
-    title: "Best Restaurant in Newark, DE",
-    description: "Top-of-funnel local discovery page for diners searching for the best restaurant in Newark.",
+    slug: "/best-restaurant-blue-bell-pa",
+    title: "Best Restaurant in Blue Bell, PA",
+    description: "Top-of-funnel local discovery page for diners searching for the best restaurant in Blue Bell.",
     icon: Star,
   },
   {
-    slug: "/romantic-restaurant-newark-de",
-    title: "Romantic Restaurant in Newark, DE",
+    slug: "/romantic-restaurant-blue-bell-pa",
+    title: "Romantic Restaurant in Blue Bell, PA",
     description: "High-converting page for date night and anniversary intent.",
     icon: Heart,
   },
   {
-    slug: "/private-dining-newark-de",
-    title: "Private Dining in Newark, DE",
+    slug: "/private-dining-blue-bell-pa",
+    title: "Private Dining in Blue Bell, PA",
     description: "Lead-generation page for event and group dining inquiries.",
     icon: Building2,
   },
   {
-    slug: "/steakhouse-newark-delaware",
-    title: "Steakhouse in Newark, Delaware",
+    slug: "/steakhouse-blue-bell-pa",
+    title: "Steakhouse in Blue Bell, PA",
     description: "Cuisine-intent page built around wood-fired dining and premium experience.",
     icon: UtensilsCrossed,
   },
   {
-    slug: "/date-night-newark-de",
-    title: "Date Night in Newark, DE",
+    slug: "/date-night-blue-bell-pa",
+    title: "Date Night in Blue Bell, PA",
     description: "Occasion page designed to turn date-night searchers into reservations.",
     icon: Heart,
   },
   {
-    slug: "/business-dinner-newark-de",
-    title: "Business Dinner in Newark, DE",
+    slug: "/business-dinner-blue-bell-pa",
+    title: "Business Dinner in Blue Bell, PA",
     description: "Weekday demand page for client meals and professional gatherings.",
     icon: Calendar,
   },
@@ -54,11 +54,11 @@ export default function PanacheSEOIndex() {
         </Badge>
         <h1 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
           <span className="shimmer-text">
-            Publish-ready page files to help Panache close the visibility gap
+            Publish-ready page files to help Panache close the visibility gap in Blue Bell, PA
           </span>
         </h1>
         <p className="text-muted-foreground leading-relaxed max-w-2xl mb-12">
-          This file contains six separate page components you can hand to a developer and map to the target URLs. Update the placeholder phone number, reservation links, hours, and menu links before launch.
+          This file contains six separate page components mapped to target URLs for Blue Bell, Pennsylvania. Real phone number, reservation links, and hours are included.
         </p>
 
         <div className="grid gap-4 sm:grid-cols-2">
