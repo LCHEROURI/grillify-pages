@@ -3,12 +3,12 @@ import ContentSection from "@/components/ContentSection";
 import BulletCards from "@/components/BulletCards";
 import FAQ from "@/components/FAQ";
 
-export default function DateNightNewarkDE() {
+export default function DateNightBlueBellPA() {
   return (
     <PageShell
-      eyebrow="Date Night in Newark, DE"
-      title="Date night in Newark, DE starts with a restaurant that feels like an occasion"
-      intro="Couples searching for date night in Newark, DE are choosing the setting as much as the menu. Panache Wood Fire Grill should use this page to capture that intent with messaging focused on atmosphere, cocktails, wood-fired dishes, and a reservation-worthy evening."
+      eyebrow="Date Night in Blue Bell, PA"
+      title="Date night in Blue Bell, PA starts with a restaurant that feels like an occasion"
+      intro="Couples searching for date night in Blue Bell, PA are choosing the setting as much as the menu. Panache Wood Fire Grill captures that intent with atmosphere, craft cocktails, wood-fired dishes, live music, and a reservation-worthy evening."
       primaryCta="Book Date Night"
     >
       <ContentSection title="What Makes a Great Date Night?">
@@ -17,14 +17,15 @@ export default function DateNightNewarkDE() {
             "A restaurant with atmosphere that sets the tone",
             "Craft cocktails to start the evening right",
             "Wood-fired dishes meant to be shared and savored",
+            "Live music Thursday through Saturday to set the mood",
+            "Outdoor patio with fire pits for a unique experience",
             "Service that feels personal, not rushed",
-            "A setting that makes every visit feel like an occasion",
           ]}
         />
       </ContentSection>
       <ContentSection
         title="Make It a Ritual"
-        body="The best date nights are the ones you repeat. Panache is designed for couples who want a go-to spot that never feels routine — with a seasonal menu, rotating specials, and an experience that rewards return visits."
+        body="The best date nights are the ones you repeat. Panache is designed for couples who want a go-to spot that never feels routine — with a seasonal menu, rotating specials, live entertainment, and an experience that rewards return visits."
       />
       <ContentSection title="Frequently Asked Questions">
         <FAQ

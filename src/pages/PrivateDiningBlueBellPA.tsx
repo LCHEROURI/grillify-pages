@@ -3,12 +3,12 @@ import ContentSection from "@/components/ContentSection";
 import BulletCards from "@/components/BulletCards";
 import FAQ from "@/components/FAQ";
 
-export default function PrivateDiningNewarkDE() {
+export default function PrivateDiningBlueBellPA() {
   return (
     <PageShell
-      eyebrow="Private Dining in Newark, DE"
-      title="Private dining in Newark, DE for events that need the right setting"
-      intro="Panache Wood Fire Grill can position its private dining offering for birthdays, rehearsal dinners, business meals, family gatherings, and other special events in Newark, Delaware. This page should make group planning feel polished, simple, and worth inquiring about."
+      eyebrow="Private Dining in Blue Bell, PA"
+      title="Private dining in Blue Bell, PA for events that need the right setting"
+      intro="Panache Wood Fire Grill offers private dining for birthdays, rehearsal dinners, business meals, family gatherings, and other special events in Blue Bell, Pennsylvania. Group planning is polished, simple, and worth inquiring about."
       primaryCta="Inquire About Private Dining"
       secondaryCta="View Event Options"
     >
@@ -31,7 +31,7 @@ export default function PrivateDiningNewarkDE() {
       <ContentSection title="Frequently Asked Questions">
         <FAQ
           items={[
-            { q: "How many guests can private dining accommodate?", a: "Contact the restaurant for current capacity and layout options for your event." },
+            { q: "How many guests can private dining accommodate?", a: "Contact the restaurant at (215) 641-9000 for current capacity and layout options for your event." },
             { q: "Can I customize the menu?", a: "Yes. The team works with you to create a menu that fits your group, preferences, and budget." },
             { q: "How far in advance should I book?", a: "We recommend reaching out at least two to four weeks before your event date." },
           ]}
