@@ -12,6 +12,10 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ["Inter", "system-ui", "sans-serif"],
+      serif: ["Playfair Display", "Georgia", "serif"],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -56,6 +60,10 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
         },
       },
       borderRadius: {
