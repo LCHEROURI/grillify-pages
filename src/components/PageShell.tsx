@@ -7,11 +7,12 @@ import heroImg from "@/assets/hero-restaurant.jpg";
 
 const brand = {
   name: "Panache Wood Fire Grill",
-  city: "Newark, Delaware",
-  phone: "(302) 000-0000",
-  reserveUrl: "https://panachewoodfiregrill.com",
-  menuUrl: "https://panachewoodfiregrill.com",
-  privateDiningUrl: "https://panachewoodfiregrill.com",
+  city: "Blue Bell, Pennsylvania",
+  address: "602 Skippack Pike, Blue Bell, PA 19422",
+  phone: "(215) 641-9000",
+  reserveUrl: "http://www.opentable.com/r/panache-woodfired-grill-reservations-blue-bell?rid=193924&restref=193924",
+  menuUrl: "https://panachewoodfiregrill.com/online-ordering/",
+  privateDiningUrl: "https://panachewoodfiregrill.com/contact-panache/",
 };
 
 interface PageShellProps {
@@ -41,7 +42,7 @@ export default function PageShell({
               {brand.name}
             </span>
             <span className="text-xs text-muted-foreground">
-              Wood-fired dining in {brand.city}
+              Wood-fired dining in Blue Bell, PA
             </span>
           </Link>
           <div className="hidden md:flex items-center gap-6">
@@ -100,17 +101,17 @@ export default function PageShell({
             {brand.name}
           </h2>
           <p className="text-muted-foreground text-sm max-w-md mx-auto mb-8">
-            Refined wood-fired dining, date nights, private events, and memorable meals in Newark, Delaware.
+            Bold flavors, live music, and unforgettable dining in Blue Bell, Pennsylvania. Wood-fired pizzas, fresh seafood, handcrafted pastas, and craft cocktails.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-muted-foreground mb-8">
             <span className="flex items-center gap-1.5">
-              <MapPin className="w-4 h-4 text-gold" /> Newark, DE
+              <MapPin className="w-4 h-4 text-gold" /> {brand.address}
             </span>
             <span className="flex items-center gap-1.5">
               <Phone className="w-4 h-4 text-gold" /> {brand.phone}
             </span>
             <span className="flex items-center gap-1.5">
-              <Clock3 className="w-4 h-4 text-gold" /> Hours &amp; availability TBD
+              <Clock3 className="w-4 h-4 text-gold" /> Open daily 11:00 AM – 9:30 PM
             </span>
           </div>
           <div className="flex items-center justify-center gap-4">
