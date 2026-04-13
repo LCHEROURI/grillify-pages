@@ -67,7 +67,7 @@ export default function PanacheSEOIndex() {
               Wood-fired dining in Blue Bell, PA
             </span>
           </Link>
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="flex flex-wrap items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
