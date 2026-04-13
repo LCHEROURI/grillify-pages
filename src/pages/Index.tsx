@@ -58,35 +58,37 @@ export default function PanacheSEOIndex() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
-          <Link to="/" className="flex flex-col shrink-0">
-            <span className="font-serif text-lg font-bold text-foreground tracking-tight">
-              {brand.name}
-            </span>
-            <span className="text-xs text-muted-foreground">
-              Wood-fired dining in Blue Bell, PA
-            </span>
-          </Link>
-          <div className="flex flex-wrap items-center gap-1">
+        <div className="max-w-6xl mx-auto px-6 py-3">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="flex flex-col shrink-0">
+              <span className="font-serif text-lg font-bold text-foreground tracking-tight">
+                {brand.name}
+              </span>
+              <span className="text-xs text-muted-foreground">
+                Wood-fired dining in Blue Bell, PA
+              </span>
+            </Link>
+            <div className="flex items-center gap-3 shrink-0">
+              <a href={brand.menuUrl} className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Menu
+              </a>
+              <a href={brand.reserveUrl}>
+                <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  Reserve Now
+                </Button>
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 mt-2 pt-2 border-t border-border/50">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className="shimmer-text text-xs font-medium px-2 py-1 rounded hover:bg-muted/50 transition-colors"
+                className="shimmer-text text-sm font-semibold px-3 py-1.5 rounded-md hover:bg-muted/60 transition-colors"
               >
                 {link.label}
               </Link>
             ))}
-          </div>
-          <div className="flex items-center gap-3 shrink-0">
-            <a href={brand.menuUrl} className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Menu
-            </a>
-            <a href={brand.reserveUrl}>
-              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Reserve Now
-              </Button>
-            </a>
           </div>
         </div>
       </nav>
