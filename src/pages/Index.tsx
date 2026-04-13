@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Star, Heart, Building2, UtensilsCrossed, Calendar } from "lucide-react";
+import { brand } from "@/components/PageShell";
+
+const navLinks = [
+  { to: "/best-restaurant-blue-bell-pa", label: "Best Restaurant" },
+  { to: "/romantic-restaurant-blue-bell-pa", label: "Romantic Dining" },
+  { to: "/private-dining-blue-bell-pa", label: "Private Dining" },
+  { to: "/steakhouse-blue-bell-pa", label: "Steakhouse" },
+  { to: "/date-night-blue-bell-pa", label: "Date Night" },
+  { to: "/business-dinner-blue-bell-pa", label: "Business Dinner" },
+];
 
 const pages = [
   {
@@ -45,7 +56,42 @@ const pages = [
 export default function PanacheSEOIndex() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="max-w-4xl mx-auto px-6 py-20">
+      {/* Nav */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+          <Link to="/" className="flex flex-col shrink-0">
+            <span className="font-serif text-lg font-bold text-foreground tracking-tight">
+              {brand.name}
+            </span>
+            <span className="text-xs text-muted-foreground">
+              Wood-fired dining in Blue Bell, PA
+            </span>
+          </Link>
+          <div className="hidden lg:flex items-center gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="shimmer-text text-xs font-medium px-2 py-1 rounded hover:bg-muted/50 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-3 shrink-0">
+            <a href={brand.menuUrl} className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Menu
+            </a>
+            <a href={brand.reserveUrl}>
+              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Reserve Now
+              </Button>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div className="max-w-4xl mx-auto px-6 pt-32 pb-20">
         <div className="mb-4">
           <div className="w-12 h-1 bg-gold rounded-full mb-6" />
         </div>
