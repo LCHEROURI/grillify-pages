@@ -36,8 +36,8 @@ export default function PageShell({
     <div className="min-h-screen bg-background text-foreground">
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          <Link to="/" className="flex flex-col">
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+          <Link to="/" className="flex flex-col shrink-0">
             <span className="font-serif text-lg font-bold text-foreground tracking-tight">
               {brand.name}
             </span>
@@ -45,8 +45,26 @@ export default function PageShell({
               Wood-fired dining in Blue Bell, PA
             </span>
           </Link>
-          <div className="hidden md:flex items-center gap-6">
-            <a href={brand.menuUrl} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <div className="hidden lg:flex items-center gap-1">
+            {[
+              { to: "/best-restaurant-blue-bell-pa", label: "Best Restaurant" },
+              { to: "/romantic-restaurant-blue-bell-pa", label: "Romantic Dining" },
+              { to: "/private-dining-blue-bell-pa", label: "Private Dining" },
+              { to: "/steakhouse-blue-bell-pa", label: "Steakhouse" },
+              { to: "/date-night-blue-bell-pa", label: "Date Night" },
+              { to: "/business-dinner-blue-bell-pa", label: "Business Dinner" },
+            ].map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="shimmer-text text-xs font-medium px-2 py-1 rounded hover:bg-muted/50 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-3 shrink-0">
+            <a href={brand.menuUrl} className="hidden md:inline text-sm text-muted-foreground hover:text-foreground transition-colors">
               Menu
             </a>
             <a href={brand.reserveUrl}>
