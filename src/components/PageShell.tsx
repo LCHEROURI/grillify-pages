@@ -69,7 +69,8 @@ export default function PageShell({
               <Link
                 key={link.to}
                 to={link.to}
-                className="shimmer-text text-sm font-semibold px-3 py-1.5 rounded-md hover:bg-muted/60 transition-colors"
+                className="text-base font-bold px-3 py-1.5 rounded-md hover:bg-muted/60 transition-colors"
+                style={{ color: "hsl(220, 60%, 20%)" }}
               >
                 {link.label}
               </Link>
