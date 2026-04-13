@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Star, Heart, Building2, UtensilsCrossed, Calendar } from "lucide-react";
+import { brand } from "@/components/PageShell";
+
+const navLinks = [
+  { to: "/best-restaurant-blue-bell-pa", label: "Best Restaurant" },
+  { to: "/romantic-restaurant-blue-bell-pa", label: "Romantic Dining" },
+  { to: "/private-dining-blue-bell-pa", label: "Private Dining" },
+  { to: "/steakhouse-blue-bell-pa", label: "Steakhouse" },
+  { to: "/date-night-blue-bell-pa", label: "Date Night" },
+  { to: "/business-dinner-blue-bell-pa", label: "Business Dinner" },
+];
 
 const pages = [
   {
