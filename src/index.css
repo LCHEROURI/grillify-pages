@@ -116,3 +116,12 @@
   -webkit-text-fill-color: transparent;
   animation: shimmer 4s ease-in-out infinite;
 }
+
+.shimmer-nav {
+  background: linear-gradient(90deg, hsl(220 60% 20%) 0%, hsl(220 50% 40%) 40%, hsl(220 60% 20%) 80%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
